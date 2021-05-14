@@ -10,10 +10,16 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <style>
-      .center_content {
-        margin: 0 auto;
+      main {
+        margin: 20px 0;
+        padding: 40px;
+      }
+      
+      main .content {
         height: 100px;
         line-height: 100px;
+        padding: 20px;
+        width: 50%;
         white-space: nowrap;
       }
     </style>
@@ -22,17 +28,11 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
-        <section id="main_content" class="center_content">
-          {{ content }}
-        </section>
-
-        <footer>
-        </footer>
-
+    <main>
+      <div class="content">
+        {{ content }}
       </div>
-    </div>
+    </main>
 
     {% if site.google_analytics %}
       <script>
