@@ -8,23 +8,12 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <style>
-      main {
-        height: 300px;
-        width: 60%;
-        margin: 0 auto;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        resize: both;
-        overflow: auto;
+      body, html {
+        height: 100%;
+        display: grid;
       }
-
-      main div {
-        width: 50%;
-        padding: 20px;
-        resize: both;
-        overflow: auto;
+      main {
+        margin: auto;
       }
     </style>
 
@@ -33,9 +22,7 @@
 
   <body>
     <main>
-      <div>
-        {{ content }} 
-      </div>
+      {{ content }} 
     </main>
 
     {% if site.google_analytics %}
