@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ 'css/all.min.css' }}">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      body, html {
+        height: 100%;
+        display: grid;
+        font-family: 'Poppins', sans-serif;
+        color: #474747;
+      }
+      main {
+        margin: auto;
+        text-align: center;
+      }
+      a {
+        margin: 5px;
+        color: #474747;
+        font-size: 20px;
+      }
+      img {
+        margin-bottom: 60px;
+      }
+    </style>
+
+{% seo %}
+  </head>
+
+  <body>
+     <nav>
+    </nav>
+    <section>
+      {{ content }} 
+    </section>
+    <footer>
+      &copy; 2021 to Paw Pantry Mission
+    </footer>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
