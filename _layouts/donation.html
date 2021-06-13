@@ -17,8 +17,7 @@
         font-family: 'Poppins', sans-serif;
         color: #474747;
       }
-      main {
-        margin: auto;
+      .content {
         text-align: center;
       }
       a {
@@ -35,13 +34,19 @@
   </head>
 
   <body>
-     <nav>
+    <nav>
+      <a href="/">Home</a>
     </nav>
-    <section>
+    <section class='content'>
       {{ content }} 
     </section>
     <footer>
-      &copy; 2021 to Paw Pantry Mission
+      <div>
+        Connect with us <a href="https://www.facebook.com/pawpantrymission"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/pawpantrymission/"><i class="fab fa-instagram"></i></a><a href="mailto:hello@pawpantrymission.org"><i class="far fa-envelope"></i></a>
+      </div>
+      <div>
+        &copy; 2021 to Paw Pantry Mission
+      </div>
     </footer>
 
     {% if site.google_analytics %}
