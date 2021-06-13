@@ -1,5 +1,4 @@
 ---
-title: Paw Pantry Mission: Donate!
 layout: donation
 ---
 
