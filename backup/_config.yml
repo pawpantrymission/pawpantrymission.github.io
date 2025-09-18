@@ -1,0 +1,30 @@
+title: "Paw Pantry Mission"
+description: "Helping pets and families stay together through pet food assistance and community support"
+baseurl: ""
+url: "https://pawpantrymission.github.io"
+
+# SEO settings
+lang: en_US
+author: "Paw Pantry Mission"
+
+# Social media
+facebook:
+  username: pawpantrymission
+instagram:
+  username: pawpantrymission
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

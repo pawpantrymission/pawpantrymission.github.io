@@ -1,1 +1,50 @@
-theme: jekyll-text-theme
+baseurl: '/'
+permalink: pretty
+title: 'Paw Pantry Mission'
+description: 'SEC-Registered Animal Welfare Organization in Cebu, Philippines promoting responsible pet ownership and humane animal population control.'
+
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "32px"
+  desktop_width: "120px"
+
+# Navigation
+main_menu:
+  - name: "Home"
+    url: "/"
+  - name: "About"
+    url: "/about/"
+  - name: "How Can I Help?"
+    url: "/help/"
+  - name: "Contact Us"
+    url: "/contact/"
+
+# Contact Information
+contact:
+  email: "pawpantrymission@gmail.com"
+  facebook: "pawpantrymission"
+  instagram: "pawpantrymission"
+  youtube: "UCq7lDI7QUxqjvtapaceYGcw"
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
+  - info.md
+  - PLAN.md
